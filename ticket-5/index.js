@@ -1,4 +1,4 @@
-const shoppingCart = [
+let shoppingCart = [
   {
     product: "Bananas",
     price: 0.5,
@@ -6,22 +6,21 @@ const shoppingCart = [
   },
   {
     product: "Apples",
-
     price: 0.7,
     quantity: 8,
   },
   {
     product: "Yoghurt",
     price: 1.5,
-    quantity: 10,
+    quantity: 1,
   },
 ];
 
 let totalCost = 0;
 
-for (let i = 0; i <= shoppingCart.length; i++) {
-  const item = shoppingCart[i];
-  const costForItem = item.price * item.quantity;
+for (let i = 0; i < shoppingCart.length; i++) {
+  let item = shoppingCart[i];
+  let costForItem = item.price * item.quantity;
   totalCost += costForItem;
 }
 
